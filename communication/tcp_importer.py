@@ -125,7 +125,7 @@ class TcpImporter:
         # command = bytearray.fromhex("AF 01 ff 01 00 00 08 01 00 FF FF FF FF FF FF AF")
         header = bytearray.fromhex("AF 02 ff 01 00 00 08 01 08 FF FF FF FF FF FF AF")
         response = self.send_command(header)
-        body = bytearray.fromhex("01 00 02 ff ff 50 ff ff")
+        body = bytearray.fromhex("01 00 02 ff ff 64 ff ff")
         response2 = self.send_command(body)
         # print(f"responsedddd: {response}")
         print(response2)
